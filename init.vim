@@ -65,9 +65,17 @@ set splitright
 set splitbelow
 
 "" Coc
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-git']
+" Code action on <leader>a
+vmap <leader>a <Plug>(coc-codeaction-selected)<CR>
+nmap <leader>a <Plug>(coc-codeaction-selected)<CR>
+" Format action on <leader>f
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+" Goto definition
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
+" Open definition in a split window
+nmap <silent> gv :vsp<CR><Plug>(coc-definition)<C-W>L
 
 "" NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
