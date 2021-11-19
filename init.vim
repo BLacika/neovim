@@ -11,9 +11,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "" Syntax highlight
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'sheerun/vim-polyglot'
 
 Plug 'ryanoasis/vim-devicons'
-let g:webdevicons_enable_nerdtree = 1
+"" let g:webdevicons_enable_nerdtree = 1
 
 "" Code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -26,6 +27,7 @@ Plug 'nvim-telescope/telescope.nvim'
 
 "" Language server
 Plug 'neovim/nvim-lspconfig'
+Plug 'elixir-editors/vim-elixir'
 
 "" Other
 Plug 'honza/vim-snippets'
@@ -34,7 +36,7 @@ Plug 'vim-scripts/auto-pairs-gentle'
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 "" Configurations
@@ -182,6 +184,6 @@ let g:airline#extensions#tabline#enabled = 1
 lua << EOF
 require'lspconfig'.elixirls.setup{
     -- Unix
-    cmd = { "/home/blaci/Elixir/elixir-ls/release/language_server.sh" };
+    cmd = { "/home/blacika/.elixir-ls/elixir-ls/release/language_server.sh" };
 }
 EOF
