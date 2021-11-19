@@ -1,0 +1,4 @@
+{
+  "elixir.pathToElixirLS": "~/.elixir-ls/elixir-ls/release/language_server.sh",
+  "emmet.includeLanguages": {"phoenix-html": "html", "html-eex": "html", "html-heex": "html", "heex": "html", "eelixir": "html"}
+}
